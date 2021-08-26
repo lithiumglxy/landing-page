@@ -1,0 +1,96 @@
+import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+:root{
+      --purple:#814096;
+      --pink:#f83292;
+      --gradient:linear-gradient(90deg, var(--purple),var(--pink));
+}
+
+
+*{
+      font-family: 'Poppins', sans-serif;
+      margin: 0; 
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      outline: none;
+      border: none;
+      text-transform: capitalize;
+
+}
+*::selection{
+      background:var(--pink);
+      color: #fff;
+}
+html{
+      font-size:62.5%;
+      overflow-x: hidden;     
+}
+body{
+      background: #f9f9f9;    
+}
+section{
+      min-height: 100vh;
+      padding:0 9%;
+      padding-top:7.5rem;
+}
+.btn{
+      display: inline-block;
+      margin-top:1rem;
+      margin-right: 1.2rem;
+      padding: 1.3rem;
+      border-radius: 4rem;
+      background:var(--gradient);
+      font-size:1.7rem;
+      color:#fff;
+      cursor: pointer;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+      transition: all 0.3s linear;
+}
+.btn:hover{
+      transform:scale(1.1);
+}
+/* header */
+
+header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background:#fff;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+      padding:2rem 9%;
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1000;
+}
+header .logo{
+      font-size: 3rem;
+      color:var(--purple);
+}
+header .logo span{
+      color:var(--pink);
+}
+header .navbar a{
+      font-size:1.7rem;
+      margin-left: 2rem;
+      color:var(--purple);
+}
+header .navbar a:hover{
+      color:var(--pink);
+      background: var(--gradient);
+      border-radius: 1rem;
+      color: #fff;
+      padding: 1rem;
+      transition: .3s linear;
+}
+header input{
+      display: none;
+}
+header label{
+      font-size:3rem;
+      color:var(--purple);
+      cursor: pointer;
+      visibility: hidden;
+      opacity: 0;
+}
